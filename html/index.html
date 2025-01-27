@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/flexbox.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/tablet.css">
+    <link rel="stylesheet" href="../css/mobile.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+   
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <title>Self Presentation</title>
+    
+   
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <div id="sidenav">
+            <nav>
+                <ul>
+                    <li><a href="#welcome">1</a><a>Welcome</a></li>   <!--if hover, show "Welcome"-->
+                    <li><a href="#tour">2</a><a>Tour</a></li>   <!--if hover, show "Personal Facts"-->
+                    <li><a href="#facts">3</a><a>Personal Facts</a></li>   <!--if hover, show "Personal Facts"-->
+                    <li><a href="#skills">4</a><a>Professional Skills</a></li>   <!--if hover, show "Professional Skills"-->
+                    <li><a href="#hobbies">5</a><a>Hobbies & Activities</a></li>   <!--if hover, show "Hobbies & Activities"-->
+                </ul>
+            </nav>
+        </div>
+
+        <div id="sidenav2">
+            <div id="menu-sidebar" class="btn" onclick="changeSource()">
+                <img id="btn-x" src="../css/imgs/three.png" alt="">
+            </div>
+           
+            <nav class="sidebar">
+                <ul>
+                    <li class="active"><a href="#welcome">Welcome</a></li>
+                    <li class="active"><a href="#tour">Tour</a></li>
+                    <li class="active"><a href="#facts">Personal Facts</a></li>
+                    <li class="active"><a href="#skills">Professional Skills</a></li>
+                    <li class="active"><a href="#hobbies">Hobbies & Activities</a</li>
+                </ul>
+            </nav>
+        </div>
+        
+        <script>
+            $('.btn').click(function(){
+              $(this).toggleClass("click");
+              $('.sidebar').toggleClass("show");
+            });
+              
+            $('nav ul li').click(function(){
+              $(this).addClass("active").siblings().removeClass("active");
+            });
+        </script>   
+        <script>
+            function changeSource(){
+                document.getElementById("btn-x").src = "../css/imgs/x.png";
+                document.getElementById("menu-sidebar").onclick = resetSource;
+            }
+
+            function resetSource(){
+                document.getElementById("btn-x").src = "../css/imgs/three.png";
+                document.getElementById("menu-sidebar").onclick = changeSource;
+            }
+        </script>
+    </header>
+
+    <!---------- PART 1 - WELCOME ---------->
+    <div class="welcome" id="welcome">
+
+        <div></div>
+
+        <div><script src="../javascript/add-content.js"></script></div>
+
+        <div id="welcome-section-2">
+            <div></div>
+            <div></div>
+            <div>
+                <p>
+                    Scroll up or click below to enter the tour
+                </p> <!--Scroll up or Swipe Up -->
+            </div>
+            <div>
+                <a class="btn-down" href="#tour" role="button"><img src="../img/arrow.png" class="btn-down-img" alt="arrow down " /></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!---------- PART 2 - Tour ---------->
+    <div class="tour" id="tour">
+
+        <div class="title-and-button">
+            <a class="btn-up" href="#welcome" role="button"><img src="../img/arrow.png" class="btn-up-img" alt="arrow up" /></a>
+
+            <h1 class="page-title">Tour</h1>
+        </div>
+
+        <div>
+            <h2>Welcome to my Self Presentation Website, where I talk about myself and guide you through it.</h2>
+            <p>
+                <br />You can choose to either use the guided tour which only requires you to scroll
+                down or click the arrow at the bottom of each section, Or you can go through
+                it yourself, skipping to the pages you'd like to see with the menu provided
+                on the right Side of the web page.
+            </p>
+        </div>
+
+        <div class="bottom-page">
+            <a class="btn-down" href="#facts" role="button" aria-label="Name"><img src="../img/arrow.png" class="btn-down-img" alt="arrow down" /></a>
+        </div>
+
+    </div>
+
+    <!---------- PART 3 - PERSONAL FACTS ---------->
+    <div class="facts" id="facts">
+        <div class="title-and-button">
+            <a class="btn-up" href="#tour" role="button"><img src="../img/arrow.png" class="btn-up-img" alt="arrow up" /></a>
+
+            <h1 class="page-title">Personal Facts</h1>
+        </div>
+
+        <div id="facts-middle">
+            <div>
+                <h2>Full Name</h2>
+                <p>Sarah Caron-Dadoun</p>
+                <h2>Languages</h2>
+                <p>French<br />English</p>
+            </div>
+            <div>
+                <h2>Born</h2>
+                <p>Montreal, Quebec</p>
+                <h2>Humor</h2>
+                <p>8/10</p>
+            </div>
+            <div>
+                <h2>Siblings</h2>
+                <p>Sister, Brother</p>
+                <h2>Email & Phone Number</h2>
+                <p>sarah.dadoun@hotmail.com<br />(514)-560-9260</p>
+            </div>
+        </div>
+
+        <div class="bottom-page">
+            <a class="btn-down" href="#skills" role="button"><img src="../img/arrow.png" class="btn-down-img" alt="arrow down" /></a>
+        </div>
+    </div>
+
+    <!---------- PART 4 - PROFESSIONAL SKILLS ---------->
+    <div class="skills" id="skills">
+        <div class="title-and-button">
+            <a class="btn-up" href="#facts" role="button"><img src="../img/arrow.png" class="btn-up-img" alt="arrow up" /></a>
+
+            <h1 class="page-title">Professional Skills</h1>
+        </div>
+
+        <div id="skill-middle">
+            <div class="card-ps disabled" id="eyelashes">
+                <div class="title-ps eyelashes">
+                    <p>Eyelashes</p>
+                </div>
+                <div class="img-ps">
+                    <img src="../img/eyelashes.png" alt="Eyelashes image" />
+                </div>
+            </div>
+
+            <div class="space-between-ps" id="space-between-ps"></div>
+
+            <div class="card-ps disabled" id="graphic-design">
+                <div class="title-ps gd">
+                    <p>Graphic Design</p>
+                </div>
+                <div class="img-ps">
+                    <img src="../img/graphic-design.png" alt="Graphic Design image" />
+                </div>
+            </div>
+
+            <div class="space-between-ps"></div>
+
+            <div class="card-ps disabled" id="programming">
+                <div class="title-ps">
+                    <p>Computer<br />Programming</p>
+                </div>
+                <div class="img-ps">
+                    <img src="../img/helloworld.png" alt="Hello World image" />
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-page">
+            <a class="btn-down" href="#hobbies" role="button"><img src="../img/arrow.png" class="btn-down-img" alt="arrow down" /></a>
+        </div>
+    </div>
+
+    <!---------- PART 5 - HOBBIES AND ACTIVITIES ---------->
+    <div class="hobbies" id="hobbies">
+        <div class="title-and-button">
+            <a class="btn-up" href="#skills" role="button"><img src="../img/arrow.png" class="btn-up-img" alt="arrow up" /></a>
+            <h1 class="page-title">Hobbies & Activities</h1>
+        </div>
+
+        <!--<div class="space-h"></div>-->
+
+        <div class="div-content-h disabled" id="first-row-h">
+            <div><img src="../img/gym.png" class="h-img gym" alt="gym icon" /><p>GYM</p></div>
+            <div class="space-h"></div>
+            <div><img src="../img/read.png" class="h-img read" alt="read icon" /><p>READ</p></div>
+            <div class="space-h" id="space-h-special"></div>
+            <div><img src="../img/cook.png" class="h-img cook" alt="cook icon" /><p>COOK</p></div>
+            <div class="space-h"></div>
+            <div><img src="../img/bike.png" class="h-img bike" alt="bike icon" /><p>BIKE</p></div>
+        </div>
+
+        <div class="div-content-h disabled" id="second-row-h">
+            <div><img src="../img/game.png" class="h-img" alt="game icon" /><p>GAME</p></div>
+            <div class="space-h"></div>
+            <div><img src="../img/draw.png" class="h-img" alt="draw icon" /><p>DRAW</p></div>
+        </div>
+
+        <!--<div class="space-h"></div>-->
+
+        <div class="bottom-page">
+            <a class="btn-down" href="#thankyou" role="button"><img src="../img/arrow.png" class="btn-down-img" alt="arrow down" /></a>
+        </div>
+    </div>
+
+    <!---------- PART 6 - THANK YOU ----------->
+    <div class="thankyou" id="thankyou">
+
+        <div class="title-and-button">
+            <a class="btn-up" href="#hobbies" role="button"><img src="../img/arrow.png" class="btn-up-img" alt="arrow up" /></a>
+            <h1 class="page-title">Thank You</h1>
+        </div>
+
+        <div id="content-t">
+
+            <h1>Did you have a good experience?</h1>
+
+            <div id="ty">
+                <button id="yes" type="button" onclick="ButtonYes()">Yes</button>
+                <div></div>
+                <button id="no" type="button" onclick="ButtonNo()">No</button>
+            </div>
+            <script>
+                let thankYou = '';
+                
+                function ButtonYes(){
+                    thankYou = 'Thank you! Glad you enjoyed it!';
+                    document.getElementById('ty').innerHTML = thankYou;
+                }
+
+                function ButtonNo(){
+                    thankYou = 'That\'s okay! Maybe next time. Have a great day!';
+                    document.getElementById('ty').innerHTML = thankYou;
+                }
+                
+
+            </script>
+
+
+        </div>
+
+        <div class="bottom-page">
+            <a class="btn-down" href="#social" role="button">More</a>
+        </div>
+
+    </div>
+
+
+    <!---------- FOOTER ---------->
+    <footer>
+
+        <div class="footer-space"></div>
+        <div>
+            <ul class="social" id="social">
+                <li>
+                    <a class="disabled1" href="https://www.facebook.com" target="_blank">Facebook</a>
+                </li>
+                <li>
+                    <a class="disabled1" href="http://twitter.com" target="_blank">Twitter</a>
+                </li>
+                <li>
+                    <a class="disabled1" href="http://www.instagram.com" target="_blank">Instagram</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-space"></div>
+
+    </footer>
+</body>
+</html>

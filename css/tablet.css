@@ -1,0 +1,528 @@
+/*-----------------------------*/
+/* ---------- MEDIA ----------- */
+
+/* ----  phone  ---- */
+@media (max-width: 1200px){
+    /* HEADER */
+    
+    .btn{
+        position: fixed;
+        top: 25px;
+        left: 25px;
+        height: 40px;
+        width: 45px;
+        text-align: center;
+        background: rgba(0,0,0,0);
+        border: 2px solid black;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: left 0.4s ease;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn img,
+    .btn2 img{
+        justify-content: center;
+        align-self: center;
+        width: 35px;
+    }
+/*
+    .btn2 {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        height: 40px;
+        width: 45px;
+        text-align: center;
+        background: #fff;
+        border: 2px solid black;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: left 0.4s ease;
+        display: flex;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+    }
+*/
+    .btn.click{
+        left: 260px;
+    }
+    
+    #sidenav2{
+        display: block;
+    }
+
+    .sidebar{
+        position: fixed;
+        width: 250px;
+        height: 100%;
+        left: -250px;
+        background: #1b1b1b;
+        transition: left 0.4s ease;
+    }
+    .sidebar.show{
+        left: 0px;
+    }
+    .sidebar .text{
+        color: white;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 65px;
+        text-align: center;
+        background: #1e1e1e;
+        letter-spacing: 1px;
+    }
+    nav ul li{
+        list-style: none;
+        padding: 35px 10px 10px 35px;
+    }
+    
+    nav ul li a{
+        color: white;
+        font-size: 18px;
+    }
+
+    nav ul li a:link{
+        height:20px;
+    }
+
+    nav ul li a:visited{
+        color: white;
+    }
+
+    nav ul li a:hover{
+        font-size:18px;
+        font-weight: 900;
+    }
+
+    nav ul li a:first-child:active, 
+    nav ul li a:first-child:hover{
+        color: #efdce6;
+        transform: none;
+    }
+    nav ul li a:nth-child(2):active, 
+    nav ul li a:nth-child(2):hover{
+        color: #e7dded;
+        transform: none;
+    }
+    nav ul li a:nth-child(3):active, 
+    nav ul li a:nth-child(3):hover{
+        color: #efdce6;
+        transform: none;
+    }
+    nav ul li a:nth-child(4):active, 
+    nav ul li a:nth-child(4):hover{
+        color: #efdce6;
+        transform: none;
+    }
+    nav ul li a:nth-child(5):active, 
+    nav ul li a:nth-child(5):hover{
+        color: #efdce6;
+        transform: 0s;
+    }
+    #sidenav{
+        display: none;
+    }
+
+    /* ---- PART 1- welcome ---- */
+
+    .welcome:nth-child(2) h1{
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
+
+    #welcome-section-2 div:nth-child(3){
+        display: flex;
+        justify-content: center;
+        align-self: flex-start;
+    }
+
+    #welcome-section-2 div:nth-child(3) p{
+        width: 160px;
+        text-align: center;
+        line-height: 20px;
+        padding-bottom: 5%;
+    }
+
+    /* ---- PART 2- tour ---- */
+
+    .tour div:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #tour h2{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+
+        font-size: 25px !important;
+        line-height: 150% !important;
+        letter-spacing: 1px;
+        width: 70%;
+        height: 30%;
+        text-align: center;
+    }
+
+    #tour p{
+        margin-left: 0px;
+        margin-right: 0px;
+
+        display: flex;
+        flex-direction: column;
+
+        line-height: 25px;
+        font-size: 12pt;
+        width: 50%;
+    }
+
+    /* ---- PART 3 - facts ---- */
+    #facts h2{
+        font-size: 15pt;
+        letter-spacing: 3px;
+    }
+    
+    #facts p{
+        font-size: 12pt;
+        line-height: 20px;
+    }
+    
+    #facts p,
+    #facts h2{
+        width: 170px;
+    }
+
+    /* ---- PART 4 - skills ---- */
+    .title-ps{
+        display: block !important;
+        font-size:10px;
+    }
+
+    /* ---- PART 5 - hobbies ---- */
+    #first-row-h{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #second-row-h{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #first-row-h div:not(.space-h){
+        width: 100px;
+        height: 100px;
+    }
+
+    #second-row-h div:not(.space-h){
+        width: 100px;
+        height: 100px;
+    }
+
+    .h-img{
+        width: 80px;
+        height: 80px;
+    }
+    .space-h{
+        width: 100px;
+        height: 100px;
+    }
+
+/* -------  Hover Hobbies ----------*/
+    .div-content-h div:not(.space-h):hover{
+        color: rgba(0,0,0,1);
+        transition: 1s;
+    }
+    #first-row-h div:not(.space-h):hover p {
+        color: rgba(0,0,0,1);
+        transition: 1s;
+        padding: 20px;
+    }
+    #first-row-h div:first-child:hover{
+        background-color: #efdce6;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+    #first-row-h div:nth-child(3):hover{
+        background-color: #e7dded;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+    #first-row-h div:nth-child(5):hover{
+        background-color: #d6e7ed;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+    #first-row-h div:last-of-type:hover{
+        background-color: #dcefe3;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+    #second-row-h div:first-child:hover{
+        background-color: #f4f4d9;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+    #second-row-h div:nth-child(3):hover{
+        background-color: #f7eee2;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    /* ---- THANK YOU ---- */
+    #content-t h1{
+        font-size: 18pt;
+        width: 300px;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    #content-t p{
+        font-size: 11pt;
+    }
+
+    #content-t > div{
+        height: 200px;
+    }
+
+    #content-t button{
+        width: 95px;
+        height: 50px;
+        
+    }
+
+    
+
+    /* ---- FOOTER ---- */
+
+    footer{
+        height: 65px;
+    }
+
+    .social li{
+        padding: 10px;
+    }
+
+    .social a{
+        width: 20px;
+        height: 20px;
+    }
+
+    .social a[href*="facebook.com"]{
+        background-image: url(../css/imgs/social2-facebook.png);
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+    }
+    .social a[href*="instagram.com"]{
+        background-image: url(../css/imgs/social2-insta.png);
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+    }
+    .social a[href*="twitter.com"]{
+        background-image: url(../css/imgs/social2-twitter.png);
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+    }
+
+    .social a[href*="facebook.com"]:hover{
+        background-size: 20px 20px;
+    }
+    .social a[href*="instagram.com"]:hover{
+        background-size: 20px 20px;
+    }
+    .social a[href*="twitter.com"]:hover{
+        background-size: 20px 20px;
+    }
+
+}
+
+
+/* SMALLER WINDOW */
+@media (max-width: 799px){
+
+    /* ---- TOUR ---- */
+    
+    #tour h2{
+        font-size: 15pt;
+    }
+
+    #tour p{
+        font-size: 10pt;
+    }
+
+    /* --- FACTS ---- */
+    #facts h2{
+        font-size: 12pt;
+        letter-spacing: 1px;;
+        padding-bottom: 0;
+    }
+    
+    #facts p{
+        font-size: 10pt;
+        line-height: 20px;
+        padding-bottom: 30px;
+    }
+    
+    #facts-middle{
+        flex-direction: column;
+        margin-left: 50px;
+        margin-right: 50px;
+        
+        justify-content: center;
+    }
+    
+    #facts-middle div{
+        width: 80%;
+    }
+    #facts-middle div:first-child{
+        height: 140px;
+        padding-bottom: 10px;
+    }
+    #facts-middle div:nth-child(2){
+        height: 100px;
+        padding-bottom: 10px;
+    }
+    #facts-middle div:nth-child(3){
+        height: 100px;
+        padding-bottom: 10px;
+    }
+
+
+
+    /* --- SKILLS ---- */
+    .card-ps:hover div:nth-child(2) {
+        height: 80%;
+        transition: .3s ease-in-out;
+    }
+    .card-ps:hover .gd {
+        display: flex;
+        color: white;
+        font-weight:600;
+        line-height: 3.5px;
+        transition: .3s ease-out;
+    }
+
+
+
+
+    /* --- HOBBIES ---- */
+    #space-h-special{
+        display: none;
+    }
+    #hobbies{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    #first-row-h{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        flex-wrap: wrap;
+        width: 240px;
+        padding-top: 10%;
+    }
+    #second-row-h{
+        height: 140px;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-bottom: 5%;
+    }
+
+    #first-row-h div:not(.space-h){
+        width: 90px;
+        height: 90px;
+    }
+
+    #second-row-h div:not(.space-h){
+        width: 90px;
+        height: 90px;
+    }
+
+    .h-img{
+        width: 60px;
+        height: 60px;
+    }
+    .space-h{
+        width: 60px;
+        height: 60px;
+    }
+
+    .div-content-h div p{
+        font-size: 5px;
+        letter-spacing: 1px;
+        text-align: center;
+        align-self: center;
+    }
+
+    /* -- HOVER HOBBIES maxwidth:799 -- */
+    
+    .div-content-h div:not(.space-h):hover{
+        color: rgba(0,0,0,1);
+        transition: 1s;
+    }
+    #first-row-h div:not(.space-h):hover p {
+        color: rgba(0,0,0,1);
+        transition: 1s;
+        padding: 5px;
+    }
+    #first-row-h div:first-child:hover{
+        background-color: #efdce6;
+        border-radius: 20px;
+        width: 90px;
+        height: 90px;
+    }
+    #first-row-h div:nth-child(3):hover{
+        background-color: #e7dded;
+        border-radius: 20px;
+        width: 90px;
+        height: 90px;
+    }
+    #first-row-h div:nth-child(5):hover{
+        background-color: #d6e7ed;
+        border-radius: 20px;
+        width: 90px;
+        height: 90px;
+    }
+    #first-row-h div:last-of-type:hover{
+        background-color: #dcefe3;
+        border-radius: 20px;
+        width: 90px;
+        height: 90px;
+    }
+    #second-row-h div:first-child:hover{
+        background-color: #f4f4d9;
+        border-radius: 20px;
+        width: 90px;
+        height: 90px;
+    }
+    #second-row-h div:nth-child(3):hover{
+        background-color: #f7eee2;
+        border-radius: 20px;
+        width: 90px;
+        height: 90px;
+    }
+}
+
+
+
+/* -- HOVER HOBBIES maxwidth:799 -- */
+

@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B80F1BDB-6A3A-46B4-BA1A-24E516443E9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{5E1BC2EA-57A3-4ABC-98DC-36102E1854C8}"
+	ProjectSection(SolutionItems) = preProject
+		css\flexbox.css = css\flexbox.css
+		..\mirrorfashion-07166\css\reset.css = ..\mirrorfashion-07166\css\reset.css
+		css\style.css = css\style.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "html", "html", "{B8259258-F294-4A7A-924F-C01B3FFE2E38}"
+	ProjectSection(SolutionItems) = preProject
+		html\index.html = html\index.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "img", "img", "{88E447C6-B02B-4B74-8F5E-4CFBA0FE0FC6}"
+	ProjectSection(SolutionItems) = preProject
+		img\arrow.png = img\arrow.png
+		img\bike.png = img\bike.png
+		img\canadian-rockies.jpg = img\canadian-rockies.jpg
+		img\cook.png = img\cook.png
+		img\draw.png = img\draw.png
+		img\eyelashes.png = img\eyelashes.png
+		img\game.png = img\game.png
+		img\graphic-design.png = img\graphic-design.png
+		img\gym.png = img\gym.png
+		img\helloworld.png = img\helloworld.png
+		img\read.png = img\read.png
+		img\welcome-background.jpg = img\welcome-background.jpg
+		img\welcome-background1.png = img\welcome-background1.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "imgs", "imgs", "{7C566D5A-F879-4F80-B353-8B4DC859F4AF}"
+	ProjectSection(SolutionItems) = preProject
+		css\imgs\social-facebook.png = css\imgs\social-facebook.png
+		css\imgs\social-insta.png = css\imgs\social-insta.png
+		css\imgs\social-twitter.png = css\imgs\social-twitter.png
+		css\imgs\social2-facebook.png = css\imgs\social2-facebook.png
+		css\imgs\social2-insta.png = css\imgs\social2-insta.png
+		css\imgs\social2-twitter.png = css\imgs\social2-twitter.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5E1BC2EA-57A3-4ABC-98DC-36102E1854C8} = {B80F1BDB-6A3A-46B4-BA1A-24E516443E9F}
+		{B8259258-F294-4A7A-924F-C01B3FFE2E38} = {B80F1BDB-6A3A-46B4-BA1A-24E516443E9F}
+		{88E447C6-B02B-4B74-8F5E-4CFBA0FE0FC6} = {B80F1BDB-6A3A-46B4-BA1A-24E516443E9F}
+		{7C566D5A-F879-4F80-B353-8B4DC859F4AF} = {5E1BC2EA-57A3-4ABC-98DC-36102E1854C8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34635FDD-4DAD-425F-B9DE-69D5E013278E}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,630 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+
+
+/* -- GLOBAL -- */
+body {
+    height:100%;
+    font-family: "Inter", sans-serif;
+}
+
+html {
+    height: 100%;
+    scroll-behavior:smooth;
+}
+
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+}
+ 
+#sidenav2{
+    display: none;
+}
+
+.tour,
+.facts,
+.skills,
+.hobbies,
+.thankyou{
+    width:100%;
+    height:100%;
+}
+
+.btn-down {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    background-color: rgba(0,0,0,0);
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.btn-up {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    background-color: rgba(0,0,0,0);
+    border-radius: 20px;
+    border: 2px solid rgba(0,0,0,0.1);
+}
+
+
+.btn-down:hover{
+    transition: 0.2s;
+    background-color: rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.btn-up:hover{
+    transition: 0.2s;
+    border: 2px solid rgba(0,0,0,0.8);
+    cursor: pointer;
+}
+
+.btn-down-img{
+    width: 15px;
+    height: 17px;
+}
+
+.btn-up-img {
+    opacity: 0.2;
+    width: 15px;
+    height: 17px;
+    transform: rotate(180deg);
+    
+}
+
+.btn-up:hover .btn-up-img {
+    opacity: 0.8;
+}
+
+.page-title{
+    font-weight:600;
+    padding-top:30px;
+    margin-bottom: -20px;
+}
+
+.title-and-button {
+    height: 20%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+}
+
+.bottom-page{
+    height:15%;
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
+}
+
+
+/* -- HEADER - menu -- */
+/*---------------------*/
+header{
+    display:flex;
+    flex-direction:row;
+    align-items:flex-end;
+}
+
+nav ul li a:nth-child(2) {
+    display: none;
+}
+
+#sidenav-hidden nav ul {
+    display:none;
+}
+
+#sidenav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 25%;
+    right: 15px;
+
+    font-family: "Montserrat", sans-serif;
+    border: 1px solid rgba(255,255,255,1);
+    border-radius: 10px;
+    background-color: rgba(255,255,255,.5);
+
+    width: 50px;
+    height: 400px;
+
+}
+
+nav ul li {
+    padding: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+nav ul li a:hover{
+    transition: 0.2s ease-out;
+    color: black;
+    font-weight: 600;
+    font-size: 120%;
+}
+
+nav ul li a:link {
+    transition: 0.2s ease-out;
+}
+
+nav ul li a:hover + a {
+    display:block;
+    position: fixed;
+    right: 80px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: right;
+
+    width: 120px;
+    height: 0px;
+    margin-top: -17px;
+}
+
+header:hover .welcome{
+    filter:blur(5px);
+}
+nav ul li a:hover .thankyou{
+    filter:blur(5px);
+}
+nav ul li a:hover .hobbies{
+    filter:blur(5px);
+}
+nav ul li a:hover .facts{
+    filter:blur(5px);
+}
+nav ul li a:hover .skills{
+    filter:blur(5px);
+}
+nav ul li a:hover .tour{
+    filter:blur(5px);
+}
+/* ---- PART 1 ---- */
+/*------------------*/
+.welcome h1 {
+    font-family: "Inert", sans-serif;
+    font-size: 70px;
+    font-weight: 100;
+    margin-left: 15%;
+}
+
+.welcome div{
+    height: 33%;
+}
+
+.welcome{
+    width: 100%;
+    height: 100%;
+    position: center;
+    background-image: url(../img/welcome-background1.png);
+    background-repeat: no-repeat;
+}
+#welcome-section-2:nth-child(3) p{
+    font-family: "Oswald", sans-serif;
+    font-size: 10pt;
+    letter-spacing: 2px;
+}
+#welcome-section-2 div{
+    height: 25%;
+}
+
+#welcome-section-2 div:last-of-type {
+    display: flex;
+    justify-content: center;
+}
+
+#welcome-section-2 div > p {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+#welcome-section-2 div > a{
+    align-self: flex-end;
+    margin-bottom: 35px;
+}
+
+#welcome-section-2 div > a:hover {
+    transition: 0.2s;
+    background-color: rgba(0,0,0,0.3);
+    cursor:pointer;
+}
+
+
+/* ---- PART 2 - TOUR ---- */
+/*---------------------*/
+
+.tour div {
+    margin-left: 100px;
+    margin-right: 100px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.tour div:nth-child(2){
+    margin-left:200px;
+    margin-right:200px;
+    height:65%;
+
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+}
+
+#tour-down div:last-of-type a{
+    align-self:flex-end;
+    margin-bottom: 35px;
+}
+
+#tour h2 {
+    align-self: center;
+    margin-bottom: 60px;
+    width: 80%;
+
+    font-size: 25pt;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 150%;
+}
+
+#tour p{
+    width: 70%;
+    align-self: center;
+    line-height:130%;
+
+}
+
+/* ---- PART 3 - PERSONAL SKILLS ---- */
+/*------------------------------------*/
+
+#facts-middle {
+    height: 65%;
+    margin-left:100px;
+    margin-right:100px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#facts-middle div{
+    width: 33%;
+    height: 60%;
+
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+#facts h2{
+    font-weight: 600;
+    font-size: 15pt;
+    letter-spacing: 2px;
+    padding-bottom: 8px;
+}
+
+#facts p {
+    font-weight: 400;
+    font-size: 11pt;
+    padding-bottom: 100px;
+}
+
+#facts h2,
+#facts p {
+    width: 150px;
+    
+}
+
+/* ---- PART 4 - PROFESSIONAL SKILLS---- */
+/*---------------------------------------*/
+
+.skills div:nth-child(2) {
+    height: 65%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    letter-spacing:2px;
+}
+
+
+.space-between-ps{
+    width: 4%;
+}
+
+.card-ps {
+    height: 80%;
+    width: 20%;
+    background-color: #e2e8e7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+#eyelashes {
+    background-color: #e2e8e7;
+}
+
+
+#graphic-design {
+    background-color: #e2e8e7;
+}
+
+#programming {
+    background-color: #e2e8e7;
+}
+
+.skills div:nth-child(2) img{
+    width: 70%;
+}
+
+.card-ps div:nth-child(2){
+    height:50%;
+}
+
+.title-ps p {
+    display: none;
+}
+
+/*Hover*/
+.card-ps:hover div:nth-child(2) {
+    height: 80%;
+    transition: .3s ease-in-out;
+}
+#eyelashes:hover{
+    background-color: #c0ccca;
+    transition: .3s ease-out;
+}
+#graphic-design:hover {
+    background-color: #c0ccca;
+    transition: .3s ease-out;
+}
+#programming:hover {
+    background-color: #c0ccca;
+    transition: .3s ease-out;
+}
+.card-ps:hover div:nth-child(2) img {
+    filter: blur(4px);
+    transition: .3s ease-in-out;
+}
+.card-ps:hover .title-ps p {
+    display: flex;
+    color: white;
+    font-weight:600;
+    height: 110%;
+    transition: .3s ease-out;
+}
+
+/*On Click*/
+
+/* ---- PART 5 - HOBBIES  ---- */
+/*-----------------------------*/
+
+.hobbies div:nth-child(2),
+.hobbies div:nth-child(3) {
+    height: 32.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-content-h div:not(.space-h) {
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color: lightgrey;
+    border-radius: 20px;
+    width: 118px;
+    height: 118px;
+}
+
+.div-content-h div:not(.space-h) p{
+    color: rgba(0,0,0,0);
+    padding: 20px;
+    margin-bottom: -55px;
+    letter-spacing: 8px;
+}
+#first-row-h div:not(.space-h) p{
+    color: rgba(0,0,0,0);
+    padding: 20px;
+    margin-bottom: -53px; /*did this on purpose so it gives a little bit of a lift effect, just not perfect on the second row*/
+    letter-spacing: 8px;
+}
+
+.h-img{
+    height: 88.5pt;
+    width: 88.5pt;
+}
+
+.space-h{
+    width:10%;
+}
+
+.second-row-h{
+    padding-bottom: 10%;
+}
+
+/*Hover*/
+.div-content-h div:not(.space-h):hover p {
+    color: rgba(0,0,0,1);
+    transition: 1s;
+    padding: 20px;
+}
+#first-row-h div:not(.space-h):hover p {
+    color: rgba(0,0,0,1);
+    transition: 1s;
+    padding: 20px;
+}
+#first-row-h div:first-child:hover{
+    background-color: #efdce6;
+    border-radius: 20px;
+}
+#first-row-h div:nth-child(3):hover{
+    background-color: #e7dded;
+    border-radius: 20px;
+}
+#first-row-h div:nth-child(5):hover{
+    background-color: #d6e7ed;
+    border-radius: 20px;
+}
+#first-row-h div:last-of-type:hover{
+    background-color: #dcefe3;
+    border-radius: 20px;
+    width: 118px;
+    height: 118px;
+}
+#second-row-h div:first-child:hover{
+    background-color: #f4f4d9;
+    border-radius: 20px;
+    width: 118px;
+    height: 118px;
+}
+#second-row-h div:nth-child(3):hover{
+    background-color: #f7eee2;
+    border-radius: 20px;
+    width: 118px;
+    height: 118px;
+}
+
+
+/* ---- PART 6 - THANK YOU ---- */
+.thankyou div:nth-child(2) {
+    height: 65%;
+}
+
+#content-t{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+#content-t div{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+    height: 50%;
+}
+
+#content-t div >div{
+    width: 5%;
+}
+
+#content-t button{
+    width: 10%;
+    height: 20%;
+    border-radius: 30px;
+    border-right-style:  none;
+    border-left-style: none;
+    border-top-style: none;
+}
+
+/*------------------------------*/
+/* ---- FOOTER ---- */
+footer{
+    height:100px;
+    display:flex;
+    flex-direction: row;
+}
+
+.footer-space{
+    width: 40%;
+}
+
+footer div:nth-child(2){
+    width:25%;
+}
+
+.social{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.social a{
+    height:40px;
+    width: 40px;
+    display: block;
+    text-indent: -9999px;
+}
+
+.social a[href*="facebook.com"] {
+    background-image: url(../css/imgs/social-facebook.png);
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+}
+.social a[href*="instagram.com"] {
+    background-image: url(../css/imgs/social-insta.png);
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+}
+.social a[href*="twitter.com"] {
+    background-image: url(../css/imgs/social-twitter.png);
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+}
+
+/*Hover Footer Social*/
+
+.social a[href*="facebook.com"]:hover {
+    transition: .5s;
+    background-image: url(../css/imgs/social2-facebook.png);
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+}
+.social a[href*="instagram.com"]:hover {
+    transition: .5s;
+    background-image: url(../css/imgs/social2-insta.png);
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+}
+.social a[href*="twitter.com"]:hover {
+    transition: .5s;
+    background-image: url(../css/imgs/social2-twitter.png);
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+}
+
+
+/*PHONE*/
+/*@media (max-width: 632px) {*/
+    
+
+    /* HEADER */
+    /* PART 1*/
+    /* PART 2*/
+    /* PART 3*/
+    /* PART 4*/
+    /* PART 5 */
+    /* THANK YOU */
+    /* FOOTER*/
+/*}*/

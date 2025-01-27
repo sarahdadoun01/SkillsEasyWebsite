@@ -1,0 +1,397 @@
+/*-----------------------------*/
+/* ---------- MEDIA ----------- */
+
+/* ----  phone  ---- */
+
+
+@media (max-width: 370px){
+    /* HEADER */
+    body{
+        overflow-x: hidden;
+    }
+
+    .disabled{
+        pointer-events: none;
+    }
+
+    .page-title{
+        font-size: 20px;
+    }
+
+    /*--- menu --- */
+
+    .btn{
+        position: fixed;
+        top: 25px;
+        left: 25px;
+        height: 30px;
+        width: 35px;
+        text-align: center;
+        background: rgba(0,0,0,0);
+        border: 2px solid black;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: left 0.4s ease;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn img,
+    .btn2 img{
+        justify-content: center;
+        align-self: center;
+        width: 25px;
+    }
+
+    .btn2 {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        height: 40px;
+        width: 45px;
+        text-align: center;
+        background: #fff;
+        border: 2px solid black;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: left 0.4s ease;
+        display: flex;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn.click{
+        left: 260px;
+    }
+    
+
+    .sidebar{
+        display: block;
+        position: fixed;
+        width: 250px;
+        height: 100%;
+        left: -250px;
+        background: #1b1b1b;
+        transition: left 0.4s ease;
+    }
+    .sidebar.show{
+        left: 0px;
+    }
+    .sidebar .text{
+        color: white;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 65px;
+        text-align: center;
+        background: #1e1e1e;
+        letter-spacing: 1px;
+    }
+    nav ul li{
+        list-style: none;
+        padding: 35px 10px 10px 35px;
+    }
+    
+    nav ul li a{
+        color: white;
+        font-size: 18px;
+    }
+
+    nav ul li a:link{
+        height:20px;
+    }
+
+    nav ul li a:visited{
+        color: white;
+    }
+
+    nav ul li a:hover{
+        font-size:18px;
+        font-weight: 900;
+    }
+
+    nav ul li a:first-child:active, 
+    nav ul li a:first-child:hover{
+        color: #efdce6;
+        transform: none;
+    }
+    nav ul li a:nth-child(2):active, 
+    nav ul li a:nth-child(2):hover{
+        color: #e7dded;
+        transform: none;
+    }
+    nav ul li a:nth-child(3):active, 
+    nav ul li a:nth-child(3):hover{
+        color: #efdce6;
+        transform: none;
+    }
+    nav ul li a:nth-child(4):active, 
+    nav ul li a:nth-child(4):hover{
+        color: #efdce6;
+        transform: none;
+    }
+    nav ul li a:nth-child(5):active, 
+    nav ul li a:nth-child(5):hover{
+        color: #efdce6;
+        transform: 0s;
+    }
+
+    /* ---- PART 1- welcome ---- */
+
+    .welcome:nth-child(2) h1{
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
+
+    #welcome-section-2 div:nth-child(3){
+        display: flex;
+        justify-content: center;
+        align-self: flex-start;
+    }
+
+    #welcome-section-2 div:nth-child(3) p{
+        width: 160px;
+        text-align: center;
+        line-height: 20px;
+        padding-bottom: 20%;
+    }
+
+    /* ---- PART 2- tour ---- */
+
+    .tour div:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #tour h2{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+        margin-top: -30%;
+
+        visibility: hidden;
+
+        font-size: 15px;
+        line-height: 100%;
+        letter-spacing: 1px;
+        width: 65%;
+        height: 30%;
+        text-align: center;
+    }
+
+    #tour h2:after{
+        display: flex;
+        flex-direction: column;
+
+        visibility: visible;
+
+        content: "Welcome to my Self Presentation Website, where I talk about myself and guide you through it.";
+        font-size: 15px;
+        line-height: 200%;
+        
+    }
+
+    #tour p{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10%;
+
+        display: flex;
+        flex-direction: column;
+
+        line-height: 150%;
+        font-size: 10px;
+        width: 60%;
+
+        visibility: hidden;
+
+    }
+
+    #tour p:after{
+        display: flex;
+        flex-direction: colum;
+
+        visibility: visible;
+        content: "You can choose to either use the guided tour which only requires you to scroll down or click the arrow at the bottom of each section, Or you can go through it yourself, skipping to the pages you'd like to see with the menu provided on the right Side of the web page";
+    }
+
+    /* ---- PART 3 - facts ---- */
+
+    #facts h2{
+        font-size: 10pt;
+        letter-spacing: 1px;;
+        padding-bottom: 0;
+    }
+    
+    #facts p{
+        font-size: 8pt;
+        line-height: 20px;
+        padding-bottom: 10px;
+    }
+    
+    #facts-middle{
+        flex-direction: column;
+        margin-left: 50px;
+        margin-right: 50px;
+        
+        justify-content: center;
+    }
+    
+    #facts-middle div{
+        width: 80%;
+    }
+    #facts-middle div:first-child{
+        height: 91px;
+        padding-bottom: 10px;
+    }
+    #facts-middle div:nth-child(2){
+        height: 75px;
+        padding-bottom: 10px;
+    }
+    #facts-middle div:nth-child(3){
+        height: 100px;
+        padding-bottom: 10px;
+    }
+
+
+    /* ---- PART 4 - skills ---- */
+
+    #skills div:nth-child(2) {
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .space-between-ps{
+        height: 8% !important;
+    }
+
+    .card-ps {
+        height: 100px;
+        width: 100px;
+        background-color: #e2e8e7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        
+    }
+
+    .title-ps{
+        display: block !important;
+        font-size:10px;
+    }
+
+    /* ---- PART 5 - hobbies ---- */
+
+    #first-row-h{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 15.5%;
+    }
+    #second-row-h{
+        height: 17%;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 5%;
+    }
+
+    #first-row-h div:not(.space-h){
+        width: 70px;
+        height: 70px;
+    }
+
+    #second-row-h div:not(.space-h){
+        width: 70px;
+        height: 70px;
+    }
+
+    .h-img{
+        width: 60px;
+        height: 60px;
+    }
+    .space-h{
+        width: 60px;
+        height: 60px;
+    }
+
+    #space-h-special{
+        display: none;
+    }
+    /* ---- THANK YOU ---- */
+    #content-t h1{
+        font-size: 12pt;
+        width: 150px;
+        text-align: center;
+        line-height: 25px;
+    }
+
+    #content-t p{
+        font-size: 8pt;
+    }
+
+    #content-t > div{
+        height: 100px;
+    }
+
+    #content-t button{
+        width: 75px;
+        height: 30px;
+        
+    }
+
+    
+
+    /* FOOTER*/
+
+    footer{
+        height: 65px;
+    }
+
+    .social li{
+        padding: 10px;
+    }
+
+    .social a{
+        width: 20px;
+        height: 20px;
+    }
+
+    .social a[href*="facebook.com"]{
+        background-image: url(../css/imgs/social2-facebook.png);
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+    }
+    .social a[href*="instagram.com"]{
+        background-image: url(../css/imgs/social2-insta.png);
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+    }
+    .social a[href*="twitter.com"]{
+        background-image: url(../css/imgs/social2-twitter.png);
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+    }
+
+    .social a[href*="facebook.com"]:hover{
+        background-size: 20px 20px;
+    }
+    .social a[href*="instagram.com"]:hover{
+        background-size: 20px 20px;
+    }
+    .social a[href*="twitter.com"]:hover{
+        background-size: 20px 20px;
+    }
+
+}
